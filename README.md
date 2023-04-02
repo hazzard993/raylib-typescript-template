@@ -20,4 +20,4 @@ Here's a [cheatsheet](https://www.raylib.com/cheatsheet/cheatsheet.html) for the
 
 - As a workaround, raylib must be imported from `raylib.ts` since it seems misrepresented in declarations. This may also be useful for using DRM mode.
 - The `.js` extension must be used in import statements.
-- This template was tested to be working when using `Node v19.8.1` and `9.2.0`.
+- This template was tested to be working when using `Node v19.8.1` and `NPM version 9.2.0`.
