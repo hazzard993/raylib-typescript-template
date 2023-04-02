@@ -1,0 +1,24 @@
+{
+  "type": "module",
+  "scripts": {
+    "start": "node ./game/game.js",
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tstl -w -p tsconfig.json",
+    "lint": "yarn lint:prettier && yarn lint:eslint",
+    "lint:eslint": "eslint -c .eslintrc src/**",
+    "lint:prettier": "prettier \"**/*.{js,ts,ym,md}\" --check",
+    "fix:prettier": "prettier \"**/*.{js,ts,ym,md}\" --check --write"
+  },
+  "dependencies": {
+    "raylib": "^0.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.0",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "typescript": "^5.0.3"
+  }
+}
