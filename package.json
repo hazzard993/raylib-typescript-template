@@ -3,8 +3,8 @@
   "scripts": {
     "start": "node ./game/game.js",
     "build": "tsc -p tsconfig.json",
-    "build:watch": "tstl -w -p tsconfig.json",
-    "lint": "yarn lint:prettier && yarn lint:eslint",
+    "build:watch": "tsc -w -p tsconfig.json",
+    "lint": "npm run lint:prettier && npm run lint:eslint",
     "lint:eslint": "eslint -c .eslintrc src/**",
     "lint:prettier": "prettier \"**/*.{js,ts,ym,md}\" --check",
     "fix:prettier": "prettier \"**/*.{js,ts,ym,md}\" --check --write"
